@@ -142,6 +142,7 @@ class TaskMonitor(ModelMonitor):
         fixedwidth('kwargs', pretty=True),
         eta,
         tstamp,
+        mark_safe('result'),
         'worker',
     )
     readonly_fields = (
